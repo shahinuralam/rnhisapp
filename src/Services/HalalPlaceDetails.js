@@ -50,18 +50,20 @@ export default class HalalPlaceDetails extends Component {
                 <ScrollView>
                     <View>
                         <Text style={styles.title}>Dawat Caffee and Restaurant</Text>
-                        <Carousel style={styles.carousel}
-                            data={data}
-                            renderItem={this.renderItem}
-                            itemWidth={150}
-                            containerWidth={width - 20}
-                            separatorWidth={0}
-                            ref={(c) => {
-                                this._carousel = c;
-                            }}
-                        //pagingEnable={false}
-                        //minScrollDistance={20}
-                        />
+                        <Card>
+                            <Carousel style={styles.carousel}
+                                data={data}
+                                renderItem={this.renderItem}
+                                itemWidth={150}
+                                containerWidth={width - 20}
+                                separatorWidth={0}
+                                ref={(c) => {
+                                    this._carousel = c;
+                                }}
+                            //pagingEnable={false}
+                            //minScrollDistance={20}
+                            />
+                        </Card>
                     </View>
                 </ScrollView>
             </SafeAreaView>
